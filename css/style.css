@@ -1,0 +1,196 @@
+:root{
+  --accent:#ff5a00;
+  --dark:#000000;
+  --muted:#6b7280;
+  font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* ===== GLOBAL ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-brand{
+  font-weight:800;
+  letter-spacing:.6px;
+}
+
+.glass-nav{
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 36, 0.55) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.navbar-nav .nav-link{
+  color:#e5e7eb !important;
+  font-weight:500;
+  padding:8px 15px;
+}
+
+.navbar-nav .nav-link:hover{
+  color:var(--accent) !important;
+}
+
+/* Navbar icons */
+.navbar .bi{
+  color:rgb(255, 230, 230) !important;
+  transition:0.3s ease;
+}
+
+.navbar .bi:hover{
+  color:#ffe2e2 !important;
+  text-shadow:0 0 8px #ff1a1a, 0 0 15px #ff4d4d;
+  transform:scale(1.2);
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:72vh;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('../img/WhatsApp Image 2025-12-12 at 12.16.34 PM (1).jpeg')
+    center/cover no-repeat;
+  color:#fff;
+  display:flex;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:2.6rem;
+}
+i.fa-solid.fa-arrow-right-long {
+    padding-left: 5px;
+}
+
+/* ===== BUTTON ===== */
+.btn-accent{
+  background:var(--accent);
+  border:none;
+  color:#fff;
+}
+
+.btn-accent:hover{
+  background:#ff6a1a;
+  color:#fff;
+}
+
+/* ===== SECTION ===== */
+section{
+  background:#000;
+  color:#fff;
+}
+
+.section-title{
+  font-weight:700;
+  margin-bottom:1rem;
+}
+
+/* Bootstrap bg-light override */
+.bg-light{
+  background:#000 !important;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card{
+  border-radius:12px;
+  overflow:hidden;
+  background:#111;
+  color:#fff;
+  box-shadow:0 6px 22px rgba(0,0,0,.6);
+}
+
+.product-card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+/* ===== FEATURE BOX ===== */
+.feature{
+  background:#111;
+  padding:1.2rem;
+  border-radius:10px;
+  color:#fff;
+}
+
+/* ===== GALLERY ===== */
+.gallery img{
+  height:180px;
+  object-fit:cover;
+  width:100%;
+}
+
+/* ===== FORMS ===== */
+.form-control,
+textarea{
+  background:gray;
+  color:#fff;
+  border:1px solid #333;
+}
+
+.form-control::placeholder{
+  color:#888;
+}
+
+/* ===== FOOTER ===== */
+.sticky-footer{
+  background:#000;
+  color:#fff;
+  padding:2rem 0;
+}
+
+.footer-links li{
+  margin-bottom:6px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  transition:.2s;
+  color:#e5e7eb;
+}
+
+.footer-links a:hover{
+  color:var(--accent);
+  padding-left:4px;
+}
+
+/* ===== WAVE ===== */
+.wave{
+  height:60px;
+  overflow:hidden;
+}
+
+.wave svg{
+  display:block;
+  width:100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(min-width:992px){
+  .hero h1{
+    font-size:3.4rem;
+  }
+}
+
+/* ===== TEXT FIX ===== */
+p,
+h1,h2,h3,h4,h5,h6,
+span,
+li,
+label{
+  color:#fff;
+}
+
+.text-muted,
+.text-white-50{
+  color:#b0b0b0 !important;
+}
